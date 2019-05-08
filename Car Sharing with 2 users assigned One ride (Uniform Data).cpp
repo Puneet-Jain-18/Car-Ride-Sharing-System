@@ -326,7 +326,7 @@ void createDriverGraph( reqGraph minimisedGraph[requestCount/2],driverGraph dGra
 
         d1=distance( minimisedGraph[j].c.lat,       minimisedGraph[j].c.lon,          drivers[i].lat, drivers[i].lon);
         d2=distance( minimisedGraph[j].next->c.lat, minimisedGraph[j].next->c.lon,    drivers[i].lat, drivers[i].lon);
-          cout<<"D1  "<<d1<<"  D2  "<<d2<<endl;    // showing all request pairs and weights
+   
         float minimised=min(d1,d2);  //assigning all requests to all drivers
         temp->weight=minimised;
         temp->request=&minimisedGraph[j];
