@@ -10,8 +10,10 @@ There are a large number of requests with pickup and drop-off location informati
 3. It is assumed that the car takes shortest distance while travelling between any two points, so insted of road network straight line distance between two points has been taken as distance.
 # Solution-Approach
 1. the solution presented runs in time O(n^3 ) and outputs a solution M with cost(M ) at most 2.5 times the optimal value.
-2. Now for every 2 request pair there are 4 different paths to be cosidred.consider Si,Sj as starting point and Ti,Tj as drop location of requesets i,j respectively. Then the possible paths followed could be
+2. Now for every 2 request pair there are 4 different paths to be cosidred.consider Si,Sj as starting point and Ti,Tj as drop location of requesets i,j respectively. Then the possible paths followed could be<br />
+
 ![alt text](https://github.com/Puneet-Jain-18/Car-Ride-Sharing-System/blob/master/path.png)
+
 
 3. The algorithm takes a two-phase greedy approach. <br>
   A.In the first phase, it matches the 2n requests into n pairs based on the shortest distance to serve any request pair but on the worse pickup choice.
